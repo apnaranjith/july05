@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .child1{
+        display:flex;
+        flex-wrap:wrap;
+        
+       }
+       .box{
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:100%;
+        text-align:center;
+        padding:0px 5px;
+
+       }
+       #item1,#item2,#item3,#item4{
+        padding:0px 10px;
+       }
+      img{
+        width:100%;
+      }
+      
+      h3{
+        
+        font-weight:100;
+      }
+      p{
+        font-size:15px;
+        text-align-last:center;
+      }
+      @media screen and (min-width:601px){
+        .box{
+            flex:1 1 20%
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- throughout the page, I have used my own breakpoints rather than given break points in the class. -->
+    <div class="container">
+      <div class="child1">
+         <div class="box">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+        <div id="item1"><h3>The Perfect Sandwich, A <br>
+            Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text<br>
+            praesent tincidunt ipsum lipsum.</p></div></div>
+        <div class="box">
+            <img src="https://www.w3schools.com/w3images/steak.jpg">
+        <div id="item2">
+            <h3>Let Me Tell You About<br>
+                 This Steak</h3>
+                 <p>Once again, some random text to lorem lorem lorem <br>lorem ipsum text praesent<br> tincidunt ipsum lipsum.</p>
+        </div></div>
+        <div class="box"><img src="	https://www.w3schools.com/w3images/cherries.jpg">
+            <div id="item3">
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum text praesent tincidunt<br> ipsum lipsum.<br><br>
+
+
+                    What else?</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="	https://www.w3schools.com/w3images/wine.jpg">
+        <div id="item4">
+            <h3>Once Again, Robust Wine <br>and Vegetable Pasta</h3>
+            <p>Lorem ipsum text praesent tincidunt <br>ipsum lipsum.</p>
+        </div>
+        
+
+      </div>
+    </div>
+    </div>
+</body>
+</html>
